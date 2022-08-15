@@ -50,10 +50,10 @@ public class Main {
         for (Student student : Arrays.asList(s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20, s21, s22, s23, s24, s25, s26, s27, s28, s29, s30, s31, s32, s33, s34, s35, s36, s37, s38, s39, s40)) {
             mentor.addStudents(student);
         }
-        Mentor mentor1 = new Mentor("mentor1", 20);
-        Mentor mentor2 = new Mentor("mentor2", 20);
-        Mentor mentor3 = new Mentor("mentor3", 20);
-        Mentor mentor4 = new Mentor("mentor4", 20);
+        Mentor mentor1 = new Mentor("Nurbek", 20);
+        Mentor mentor2 = new Mentor("Zhanarbek", 20);
+        Mentor mentor3 = new Mentor("Muhammed", 20);
+        Mentor mentor4 = new Mentor("Allanov", 20);
         Mentor[] mentors = {mentor1, mentor2, mentor3, mentor4};
         for(int u = 0; u<4;u++){
             System.out.println(mentors[u].getName());
