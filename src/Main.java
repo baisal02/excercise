@@ -55,7 +55,7 @@ public class Main {
         Mentor mentor3 = new Mentor("Muhammed", 20);
         Mentor mentor4 = new Mentor("Allanov", 20);
         Mentor[] mentors = {mentor1, mentor2, mentor3, mentor4};
-        for(int u = 0; u<4;u++){
+        for(int u = 0; u< mentors.length;u++){
             System.out.println(mentors[u].getName());
         for (int i = 0; i < mentor.getStudents().length / mentors.length; i++) {
             int c = random.nextInt(0, mentor.getStudents().length);
