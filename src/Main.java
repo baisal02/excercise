@@ -55,10 +55,6 @@ public class Main {
         Mentor mentor3 = new Mentor("mentor3", 20);
         Mentor mentor4 = new Mentor("mentor4", 20);
         Mentor[] mentors = {mentor1, mentor2, mentor3, mentor4};
-        Student[] m1 = new Student[mentor.getStudents().length / mentors.length];
-        Student[] m2 = new Student[mentor.getStudents().length / mentors.length];
-        Student[] m3 = new Student[mentor.getStudents().length / mentors.length];
-        Student[] m4 = new Student[mentor.getStudents().length / mentors.length];
         for(int u = 0; u<4;u++){
             System.out.println(mentors[u].getName());
         for (int i = 0; i < mentor.getStudents().length / mentors.length; i++) {
