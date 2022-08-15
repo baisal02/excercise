@@ -59,11 +59,12 @@ public class Main {
         Student[] m2 = new Student[mentor.getStudents().length / mentors.length];
         Student[] m3 = new Student[mentor.getStudents().length / mentors.length];
         Student[] m4 = new Student[mentor.getStudents().length / mentors.length];
-        System.out.println(mentor1.getName()+" stdentteri");
+        for(int u = 0; u<4;u++){
+            System.out.println(mentors[u].getName());
         for (int i = 0; i < mentor.getStudents().length / mentors.length; i++) {
             int c = random.nextInt(0, mentor.getStudents().length);
             if (mentor.getStudents()[c] != null) {
-                m1[i] = mentor.getStudents()[c];
+                System.out.println(mentor.getStudents()[c].getName());
                 mentor.getStudents()[c] = null;
             } else {
                 while (true) {
@@ -72,12 +73,12 @@ public class Main {
                         break;
                     }
                 }
-                m1[i] = mentor.getStudents()[c];
+                System.out.println(mentor.getStudents()[c].getName());
                 mentor.getStudents()[c] = null;
             }
-            System.out.println(m1[i].getName());
         }
-        System.out.println("          ");
+        }
+       /* System.out.println("          ");
         System.out.println("          ");
         System.out.println(mentor2.getName()+" studentteri");
         for (int i = 0; i < mentor.getStudents().length / mentors.length; i++) {
@@ -136,7 +137,6 @@ public class Main {
                 mentor.getStudents()[c] = null;
             }
             System.out.println(m4[i].getName());
-        }
+        }*/
     }
 }
-
